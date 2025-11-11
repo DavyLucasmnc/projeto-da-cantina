@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="marrom_claro_fundo">#F5EFE6</color>
+    <color name="marrom_medio">#A1887F</color>
+    <color name="marrom_escuro">#A97142</color>
+    <color name="marrom_muito_escuro">#60442B</color>
+
+    <color name="cantinaHeaderBackground">#795548</color>
+    <color name="cantinaHeaderTextColor">#FFFFFF</color>
+    <color name="cantinaListBackground">#F5EFE8</color>
+    <color name="cantinaItemTextColor">#424242</color>
+    <color name="cantinaButtonColor">#795548</color>
+    <color name="cantinaAccent">#FFAB40</color>
+</resources>

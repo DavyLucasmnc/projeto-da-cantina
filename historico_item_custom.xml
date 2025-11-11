@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/rounded_background_branco_borda_historico" >
+
+    <TextView
+        android:id="@+id/textViewHistoricoPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/marrom_muito_escuro"
+        android:text="ID: 1 | Cliente: João | Total: R$ 15,50" />
+
+    <TextView
+        android:id="@+id/textViewHistoricoSecundario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/marrom_escuro"
+        android:layout_marginTop="4dp"
+        android:text="Pagamento: Cartão de Crédito | Data: 2023-10-26 10:30" />
+
+</LinearLayout>

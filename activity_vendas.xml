@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/marrom_claro_fundo"
+    android:fitsSystemWindows="true"
+    tools:context=".VendasActivity">
+
+    <Button
+        android:id="@+id/btnFinalizarCompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/marrom_escuro"
+        android:text="Finalizar Compra"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnFinalizarCompra"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Nova Venda"
+                android:textColor="@color/marrom_muito_escuro"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nome do Cliente:"
+                android:textColor="@color/marrom_escuro"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editTextMatricula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do Cliente (Opcional)"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingBottom="12dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/marrom_medio" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Selecione o Produto:"
+                        android:textColor="@color/marrom_escuro"
+                        android:textSize="16sp"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerProdutos"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:backgroundTint="@color/marrom_medio" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="8dp">
+                        <EditText
+                            android:id="@+id/editTextQuantidade"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="Qtd"
+                            android:inputType="number"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/marrom_medio"/>
+                        <Button
+                            android:id="@+id/btnAdicionarProduto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Adicionar"
+                            android:backgroundTint="@color/marrom_escuro"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forma de Pagamento:"
+                        android:textColor="@color/marrom_escuro"
+                        android:textSize="16sp"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerPagamento"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:backgroundTint="@color/marrom_medio" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Itens da Compra:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/marrom_muito_escuro"
+                android:layout_marginTop="24dp"/>
+
+            <TextView
+                android:id="@+id/textViewItensCompra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="100dp"
+                android:text="--- Carrinho Vazio ---"
+                android:gravity="top"
+                android:textColor="@color/black"
+                android:background="@drawable/rounded_background_branco_border"
+                android:padding="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textViewTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: R$ 0,00"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/marrom_muito_escuro"
+                android:layout_gravity="end"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/marrom_claro_fundo"
+    tools:context=".formLogin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/marrom_muito_escuro"
+        android:layout_marginBottom="48dp"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu email"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/marrom_escuro"
+        android:textColor="@color/black"
+        android:textColorHint="@color/marrom_medio"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edit_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite sua senha"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/marrom_escuro"
+        android:textColor="@color/black"
+        android:textColorHint="@color/marrom_medio"
+        android:layout_marginBottom="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_manter_conectado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manter conectado"
+        android:textColor="@color/marrom_muito_escuro"
+        android:buttonTint="@color/marrom_escuro"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:id="@+id/btn_entrar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Entrar"
+        android:textSize="18sp"
+        android:backgroundTint="@color/marrom_escuro"
+        android:textColor="@color/white"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/text_tela_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não tem uma conta? Cadastre-se"
+        android:textColor="@color/marrom_muito_escuro"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

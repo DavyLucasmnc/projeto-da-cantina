@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">cantina</string>
+    <string name="entrar">Entrar</string>
+    <string name="text_cadastro">Não possui conta? crie uma!</string>
+</resources>

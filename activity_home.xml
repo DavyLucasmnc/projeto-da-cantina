@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/marrom_claro_fundo"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Painel de Controle"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/marrom_muito_escuro"
+        android:layout_marginBottom="48dp"/>
+
+    <Button
+        android:id="@+id/button_nova_venda"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Nova Venda"
+        android:textSize="18sp"
+        android:backgroundTint="@color/marrom_escuro"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/button_historico_vendas"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Histórico de Vendas"
+        android:textSize="18sp"
+        android:backgroundTint="@color/marrom_escuro"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/button_cadastrar_produto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Cadastrar Novo Produto"
+        android:textSize="18sp"
+        android:backgroundTint="@color/marrom_muito_escuro"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/button_sair"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Sair"
+        android:textSize="18sp"
+        android:backgroundTint="#C14242"
+        android:textColor="@color/white"
+        android:layout_marginTop="32dp"/>
+
+    <Button
+        android:id="@+id/button_gerenciar_produtos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Gerenciar Produtos"
+        android:textSize="18sp"
+        android:backgroundTint="@color/marrom_muito_escuro"
+        android:textColor="@color/white" />
+
+</LinearLayout>

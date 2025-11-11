@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp"
+android:background="@color/marrom_claro_fundo"
+android:fitsSystemWindows="true"
+    tools:context=".GerenciarProdutosActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gerenciar Produtos"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/marrom_muito_escuro"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clique em um produto para editar ou excluir."
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/marrom_muito_escuro" />
+
+    <ListView
+        android:id="@+id/listViewProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rounded_background_marrom_claro"
+        android:padding="8dp"/>
+
+</LinearLayout>

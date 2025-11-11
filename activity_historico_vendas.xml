@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/marrom_claro_fundo"
+    android:fitsSystemWindows="true"
+    tools:context=".HistoricoVendasActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_historico"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@color/marrom_escuro"
+        app:title="Histórico de Vendas"
+        app:titleTextColor="@color/white" />
+    <ListView
+        android:id="@+id/listViewHistorico"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_historico"
+        android:padding="8dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"/>
+
+</RelativeLayout>
